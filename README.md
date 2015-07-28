@@ -1,6 +1,6 @@
-# Foundation Compass Template
+# Solid Portfolio
 
-The easiest way to get started with Foundation + Compass.
+A portfolio theme based on Foundation 5.
 
 ## Requirements
 
