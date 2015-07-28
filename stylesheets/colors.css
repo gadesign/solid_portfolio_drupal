@@ -1,0 +1,79 @@
+/* ---------- Color Module Styles ----------- */
+/* line 4, ../scss/colors.scss */
+body,
+body.overlay {
+  color: #3b3b3b;
+}
+
+/* line 8, ../scss/colors.scss */
+.comment .comment-arrow {
+  border-color: #ffffff;
+}
+
+/* line 11, ../scss/colors.scss */
+#page,
+#main-wrapper,
+#main-menu-links li a.active,
+#main-menu-links li.active-trail a {
+  background: #ffffff;
+}
+
+/* line 17, ../scss/colors.scss */
+.tabs ul.primary li a.active {
+  background-color: #ffffff;
+}
+
+/* line 20, ../scss/colors.scss */
+.tabs ul.primary li.active a {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* line 24, ../scss/colors.scss */
+#header {
+  background-color: #48a9e4;
+  background-image: -moz-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
+  background-image: -ms-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
+  background-image: -o-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0779bf), color-stop(1, #48a9e4));
+  background-image: -webkit-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
+  background-image: linear-gradient(top, #0779bf 0%, #48a9e4 100%);
+}
+
+/* line 33, ../scss/colors.scss */
+a {
+  color: #0071B3;
+}
+
+/* line 36, ../scss/colors.scss */
+a:hover,
+a:focus {
+  color: #018fe2;
+}
+
+/* line 40, ../scss/colors.scss */
+a:active {
+  color: #23aeff;
+}
+
+/* line 43, ../scss/colors.scss */
+.sidebar .block {
+  background-color: #f6f6f2;
+  border-color: #f9f9f9;
+}
+
+/* line 47, ../scss/colors.scss */
+#page-wrapper,
+#footer-wrapper {
+  background: #292929;
+}
+
+/* line 51, ../scss/colors.scss */
+.region-header,
+.region-header a,
+.region-header li a.active,
+#name-and-slogan,
+#name-and-slogan a,
+#secondary-menu-links li a {
+  color: #fffeff;
+}

@@ -1,0 +1,25 @@
+/* ---------- Basic Layout RTL Styles ----------- */
+/* line 4, ../scss/layout-rtl.scss */
+#content,
+#sidebar-first,
+#sidebar-second,
+.region-triptych-first,
+.region-triptych-middle,
+.region-triptych-last,
+.region-footer-firstcolumn,
+.region-footer-secondcolumn,
+.region-footer-thirdcolumn,
+.region-footer-fourthcolumn {
+  float: right;
+}
+
+/* line 16, ../scss/layout-rtl.scss */
+.region-header {
+  float: left;
+}
+
+/* line 19, ../scss/layout-rtl.scss */
+#secondary-menu {
+  left: 0;
+  right: auto;
+}

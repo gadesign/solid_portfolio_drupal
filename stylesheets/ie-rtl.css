@@ -1,0 +1,68 @@
+/* line 2, ../scss/ie-rtl.scss */
+fieldset legend {
+  left: 6px;
+}
+
+/* line 5, ../scss/ie-rtl.scss */
+ul.action-links li a,
+#user-login-form li.openid-link a,
+#user-login li.openid-link a {
+  zoom: 1;
+}
+
+/* line 10, ../scss/ie-rtl.scss */
+.comment .attribution {
+  float: right;
+}
+
+/* line 13, ../scss/ie-rtl.scss */
+.comment .comment-arrow {
+  position: absolute;
+  right: 25px;
+}
+
+/* line 17, ../scss/ie-rtl.scss */
+.region-header .block,
+.region-header #block-user-login .form-item {
+  float: none;
+  display: inline;
+  vertical-align: top;
+}
+
+/* line 23, ../scss/ie-rtl.scss */
+.region-header #block-user-login .item-list li {
+  float: none;
+}
+
+/* line 26, ../scss/ie-rtl.scss */
+.region-header #block-user-login .item-list li.last {
+  padding-right: 0;
+}
+
+/* line 29, ../scss/ie-rtl.scss */
+#user-login-form li.openid-link a,
+#user-login li.openid-link a {
+  background-position: right -3px;
+  padding-right: 20px;
+  zoom: 1;
+}
+
+/* line 35, ../scss/ie-rtl.scss */
+#main-menu ul.links li {
+  margin: 0;
+}
+
+/* line 38, ../scss/ie-rtl.scss */
+#main-menu ul.links li,
+#main-menu ul.links li a {
+  display: inline;
+  float: none;
+  margin: 0;
+  zoom: 1;
+}
+
+/* line 45, ../scss/ie-rtl.scss */
+#footer li {
+  display: inline;
+  float: none;
+}

@@ -1,0 +1,26 @@
+/* line 2, ../scss/ie6.scss */
+#content {
+  overflow: hidden;
+}
+
+/* line 5, ../scss/ie6.scss */
+.form-item-search-block-form {
+  width: 50%;
+}
+
+/* line 8, ../scss/ie6.scss */
+.tabs ul.primary,
+.region-header .block-menu li a,
+.comment-form .form-item {
+  zoom: 1;
+}
+
+/* line 13, ../scss/ie6.scss */
+#block-search-form .form-item-search-block-form input {
+  width: 67%;
+}
+
+/* line 16, ../scss/ie6.scss */
+.node-teaser {
+  border-bottom: 1px solid #d3d7d9;
+}
