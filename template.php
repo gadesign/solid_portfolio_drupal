@@ -1,5 +1,27 @@
 <?php
 /**
+ * Implements hook_links__system_main_menu
+ */
+function solid_portfolio_links__system_main_menu($variables) {
+  $html = ""; 
+  foreach ($variables['links'] as $key => $link) {
+    $html .= "<li>".l($link['title'], $link['href'], $link)."</li>";
+  }
+  return $html;
+}
+
+/**
+ * Implements hook_links__system_secondary_menu
+ */
+function solid_portfolio_links__system_secondary_menu($variables) {
+  $html = ""; 
+  foreach ($variables['links'] as $key => $link) {
+    $html .= "<li>".l($link['title'], $link['href'], $link)."</li>";
+  }
+  return $html;
+}
+
+/**
  * Implements hook_js_alter
  */
 function solid_portfolio_js_alter(&$javascript) {

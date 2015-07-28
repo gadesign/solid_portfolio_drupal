@@ -38,3 +38,13 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+/** Off-canvas menu styles **/
+ul.off-canvas-list li a {
+    border-bottom: 1px solid #262626;
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    padding: 0.66667rem;
+    transition: background 300ms ease;
+    text-align: right;
+}
