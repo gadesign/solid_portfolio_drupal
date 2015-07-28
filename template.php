@@ -1,8 +1,6 @@
 <?php
 /**
  * Implements hook_js_alter
- *
- * @param      &       $javascript
  */
 function solid_portfolio_js_alter(&$javascript) {
   // Swap out jQuery to use an updated version of the library. 
