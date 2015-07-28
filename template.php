@@ -20,6 +20,10 @@ function solid_portfolio_preprocess_html(&$variables) {
     || !empty($variables['page']['footer_fourthcolumn'])) {
     $variables['classes_array'][] = 'footer-columns';
   }
+
+  // Add conditional stylesheets for IE
+  drupal_add_css(path_to_theme() . '/stylesheets/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/stylesheets/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 6', '!IE' => FALSE), 'preprocess' => FALSE));
 }
 
 /**
@@ -80,6 +84,7 @@ function solid_portfolio_preprocess_maintenance_page(&$variables) {
   if (!$variables['db_is_active']) {
     $variables['site_name'] = '';
   }
+  drupal_add_css(drupal_get_path('theme', 'solid_portfolio') . '/stylesheets/maintenance-page.css');
 }
 
 /**
