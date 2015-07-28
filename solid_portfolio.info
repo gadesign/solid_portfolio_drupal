@@ -10,6 +10,9 @@ stylesheets[all][] = stylesheets/style.css
 stylesheets[all][] = stylesheets/colors.css
 stylesheets[print][] = stylesheets/print.css
 
+scripts[] = bower_components/foundation/js/foundation.min.js
+scripts[] = js/app.js
+
 regions[header] = Header
 regions[help] = Help
 regions[page_top] = Page top
