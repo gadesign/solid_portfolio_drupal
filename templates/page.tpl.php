@@ -89,10 +89,11 @@
 <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
     <nav class="tab-bar">
+      <?php if ($main_menu): ?>
       <section class="left-small">
         <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
       </section>
-
+      <?php endif; ?>
       <section class="middle tab-bar-section">
       
         <h1 class="title">
@@ -102,15 +103,17 @@
         </h1>
 
       </section>
-
+      
+      <?php if ($secondary_menu): ?>
       <section class="right-small">
         <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
       </section>
+    <?php endif; ?>
     </nav>
-
+<?php if ($main_menu): ?>
     <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-        <?php if ($main_menu): ?>
+        
          <div id="main-menu" class="navigation">
         <?php print theme('links__system_main_menu', array(
           'links' => $main_menu,
@@ -126,14 +129,15 @@
         )); ?>
 
       </div> <!-- /#main-menu -->
-    <?php endif; ?>
+    
       </ul>
     </aside>
-
+<?php endif; ?>
+<?php if ($secondary_menu): ?>
     <aside class="right-off-canvas-menu">
       <ul class="off-canvas-list">
        <!--  <li><label>Users</label></li> -->
-        <?php if ($secondary_menu): ?>
+        
         <div id="secondary-menu" class="navigation">
         <?php print theme('links__system_secondary_menu', array(
           'links' => $secondary_menu,
@@ -148,9 +152,10 @@
           ),
         )); ?>
       </div> <!-- /#secondary-menu -->
-    <?php endif; ?>
+    
       </ul>
     </aside>
+<?php endif; ?>
 
     <section class="main-section">
 <!-- End of off-canvas head -->
