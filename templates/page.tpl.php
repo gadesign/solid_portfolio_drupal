@@ -226,12 +226,17 @@ $content_column_size = solid_portfolio_main_content_size($page['sidebar_first'],
     <?php endif; ?>
 
   </div></div> <!-- /#main, /#main-wrapper -->
-
   <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
-    <div id="triptych-wrapper"><div id="triptych" class="clearfix">
+    <div id="triptych-wrapper"><div id="triptych" class="clearfix row">
+      <div class="large-4 columns">
       <?php print render($page['triptych_first']); ?>
+      </div>
+      <div class="large-4 columns">
       <?php print render($page['triptych_middle']); ?>
+      </div>
+      <div class="large-4 columns">
       <?php print render($page['triptych_last']); ?>
+      </div>
     </div></div> <!-- /#triptych, /#triptych-wrapper -->
   <?php endif; ?>
 
@@ -239,10 +244,18 @@ $content_column_size = solid_portfolio_main_content_size($page['sidebar_first'],
 
     <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
       <div id="footer-columns" class="row clearfix">
+        <div class="large-3 columns">
         <?php print render($page['footer_firstcolumn']); ?>
+        </div>
+        <div class="large-3 columns">
         <?php print render($page['footer_secondcolumn']); ?>
+        </div>
+        <div class="large-3 columns">
         <?php print render($page['footer_thirdcolumn']); ?>
+        </div>
+        <div class="large-3 columns">
         <?php print render($page['footer_fourthcolumn']); ?>
+        </div>
       </div> <!-- /#footer-columns -->
     <?php endif; ?>
 
