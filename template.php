@@ -1,5 +1,24 @@
 <?php
 /**
+ * Set the width of the main content area.
+ *
+ * @param      $page['sidebar_first']
+ * @param      $page['sidebar_second']
+ *
+ * @return     $content_column_size
+ */
+function solid_portfolio_main_content_size($sidebar1,$sidebar2){
+  $content_column_size = '';
+if($sidebar1 && $sidebar2){
+  $content_column_size = 'large-6';
+} elseif ($sidebar1 || $sidebar2){
+  $content_column_size = 'large-9';
+} else {
+  $content_column_size = 'large-12';
+}
+return $content_column_size;
+}
+/**
  * Implements hook_links__system_main_menu
  */
 function solid_portfolio_links__system_main_menu($variables) {

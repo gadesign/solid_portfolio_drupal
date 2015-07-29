@@ -84,14 +84,7 @@
  * @see bartik_process_page()
  * @see html.tpl.php
  */
-$content_column_size = '';
-if($page['sidebar_first'] && $page['sidebar_second']){
-  $content_column_size = 'large-6';
-} elseif ($page['sidebar_first'] || $page['sidebar_second']){
-  $content_column_size = 'large-9';
-} else {
-  $content_column_size = 'large-12';
-}
+$content_column_size = solid_portfolio_main_content_size($page['sidebar_first'],$page['sidebar_second']);
 ?>
 <!-- Start of Off-canvas head -->
 <div class="off-canvas-wrap" data-offcanvas>
