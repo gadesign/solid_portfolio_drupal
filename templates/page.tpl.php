@@ -84,6 +84,14 @@
  * @see bartik_process_page()
  * @see html.tpl.php
  */
+$content_column_size = '';
+if($page['sidebar_first'] && $page['sidebar_second']){
+  $content_column_size = 'large-6';
+} elseif ($page['sidebar_first'] || $page['sidebar_second']){
+  $content_column_size = 'large-9';
+} else {
+  $content_column_size = 'large-12';
+}
 ?>
 <!-- Start of Off-canvas head -->
 <div class="off-canvas-wrap" data-offcanvas>
@@ -186,7 +194,13 @@
       <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
 
-    <div id="content" class="large-9 columns"><div class="section">
+    <?php if ($page['sidebar_first']): ?>
+      <div id="sidebar-first" class="large-3 columns sidebar"><div class="section">
+        <?php print render($page['sidebar_first']); ?>
+      </div></div> <!-- /.section, /#sidebar-first -->
+    <?php endif; ?>
+
+    <div id="content" class="columns <?php print $content_column_size; ?>"><div class="section">
       <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
@@ -212,11 +226,10 @@
 
     </div></div> <!-- /.section, /#content -->
 
-
-    <?php if ($page['sidebar']): ?>
-      <div id="sidebar" class="large-3 columns sidebar"><div class="section">
-        <?php print render($page['sidebar']); ?>
-      </div></div> <!-- /.section, /#sidebar -->
+    <?php if ($page['sidebar_second']): ?>
+      <div id="sidebar-second" class="large-3 columns sidebar"><div class="section">
+        <?php print render($page['sidebar_second']); ?>
+      </div></div> <!-- /.section, /#sidebar-second -->
     <?php endif; ?>
 
   </div></div> <!-- /#main, /#main-wrapper -->
