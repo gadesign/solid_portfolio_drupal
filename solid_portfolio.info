@@ -5,10 +5,10 @@ version = 1.0
 core = 7.x
 
 stylesheets[all][] = stylesheets/app.css
-stylesheets[all][] = stylesheets/layout.css
-stylesheets[all][] = stylesheets/style.css
-stylesheets[all][] = stylesheets/colors.css
-stylesheets[print][] = stylesheets/print.css
+;stylesheets[all][] = stylesheets/layout.css
+;stylesheets[all][] = stylesheets/style.css
+;stylesheets[all][] = stylesheets/colors.css
+;stylesheets[print][] = stylesheets/print.css
 
 scripts[] = bower_components/foundation/js/foundation.min.js
 scripts[] = js/app.js
@@ -21,8 +21,7 @@ regions[highlighted] = Highlighted
 
 regions[featured] = Featured
 regions[content] = Content
-regions[sidebar_first] = Sidebar first
-regions[sidebar_second] = Sidebar second
+regions[sidebar] = Sidebar
 
 regions[triptych_first] = Triptych first
 regions[triptych_middle] = Triptych middle
