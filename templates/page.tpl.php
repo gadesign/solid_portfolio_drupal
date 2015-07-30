@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Bartik's theme implementation to display a single Drupal page.
+ * Solid Portfolio's theme implementation to display a single Drupal page.
  *
  * The doctype, html, head and body tags are not in this template. Instead they
  * can be found in the html.tpl.php template normally located in the
@@ -240,7 +240,7 @@ $content_column_size = solid_portfolio_main_content_size($page['sidebar_first'],
     </div></div> <!-- /#triptych, /#triptych-wrapper -->
   <?php endif; ?>
 
-  <div id="footer-wrapper"><div class="row section">
+  <div id="footer-wrapper"><div class="row section panel">
 
     <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
       <div id="footer-columns" class="row clearfix">
