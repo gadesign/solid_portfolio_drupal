@@ -264,9 +264,7 @@ $content_column_size = solid_portfolio_main_content_size($page['sidebar_first'],
         <?php print render($page['footer']); ?>
       </div> <!-- /#footer -->
     <?php endif; ?>
-
   </div></div> <!-- /.section, /#footer-wrapper -->
-
 </div></div> <!-- /#page, /#page-wrapper -->
 
 <!-- Start of off-canvas tail -->
